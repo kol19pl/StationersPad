@@ -2,12 +2,13 @@ package com.koltech.kol.stationeerspad;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.AdRequest;
@@ -61,26 +62,9 @@ public class MainActivity extends AppCompatActivity implements RewardedVideoAdLi
         setContentView(R.layout.activity_stopy_metali);
     }
 
-    public void openstopyconstantan(View view) {
-        setContentView(R.layout.stopy_constantan);
-    }
-    public void openstopyelectrum(View view) {
-        setContentView(R.layout.stopy_electrum);
-    }
-    public void openstopyinvar(View view) {
-        setContentView(R.layout.stopy_invar);
-    }
-    public void openstopysolder(View view) {
-        setContentView(R.layout.stopy_solder_);
-    }
-    public void openstopystal(View view) {
-        setContentView(R.layout.stopy_stal);
-    }
 
-    //paliwo
-    public void openpaliwo(View view) {
-        setContentView(R.layout.paliwo);
-    }
+
+
 
     //piec
     public void openpiec(View view) { setContentView(R.layout.piec); }
@@ -88,51 +72,16 @@ public class MainActivity extends AppCompatActivity implements RewardedVideoAdLi
 
 
 
-    //rudy
-    public void openrudy(View view) {
-        setContentView(R.layout.nadzorca_rudy);
-    }
 
-    public void openwengiel(View view) {
-        setContentView(R.layout.wengiel);
-    }
-    public void openmiedz(View view) {
-        setContentView(R.layout.miedz);
-    }
-    public void openzloto(View view) {
-        setContentView(R.layout.zloto);
-    }
-    public void openzelazo(View view) {
-        setContentView(R.layout.zelazo);
-    }
-    public void openoluw(View view) {
-        setContentView(R.layout.oluw);
-    }
-    public void opennikel(View view) {
-        setContentView(R.layout.nikel);
-    }
-    public void openkrzem(View view) {
-        setContentView(R.layout.krzem);
-    }
-    public void opensrebro(View view) {
-        setContentView(R.layout.srebro);
-    }
-    public void openuran(View view) {
-        setContentView(R.layout.uran);
-    }
-    public void openlud(View view) {
-        setContentView(R.layout.lud);
-    }
-    ///lud
-    public void openlud_tlen(View view) {
-        setContentView(R.layout.lud_tlen);
-    }
-    public void openlud_woda(View view) {
-        setContentView(R.layout.lud_woda);
-    }
-    public void openlud_wodur(View view) {
-        setContentView(R.layout.lud_wodur);
-    }
+
+
+
+
+
+
+
+
+
 
     //twurca
     public void twurca(View view) {

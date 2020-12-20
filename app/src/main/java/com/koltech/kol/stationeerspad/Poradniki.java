@@ -1,8 +1,10 @@
 package com.koltech.kol.stationeerspad;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Poradniki extends AppCompatActivity {
 
@@ -13,7 +15,6 @@ public class Poradniki extends AppCompatActivity {
     }
     public void solar1(View view){setContentView(R.layout.poradniki_esysolarpanel);}
 
-    public void solarshemat(View view){setContentView(R.layout.poradniki_esysolarpanel_shemat);}
 
     public void Timing(View view){setContentView(R.layout.poradniki_timing);}
     public void Timingshemat(View view){setContentView(R.layout.poradniki_timing_shemat);}
