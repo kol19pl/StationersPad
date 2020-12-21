@@ -7,10 +7,33 @@
     android:orientation="vertical">
 
 
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="aktualizacje"
+        android:text="Aktualizacje"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTwurca"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Twórca"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
+        android:id="@+id/imageViewMain"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -19,88 +42,117 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/stationeers_pad" />
 
-    <Button
-        android:id="@+id/buttonaktualizacje"
+    <ScrollView
+        android:id="@+id/scrollViewMain"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/przycisk"
-        android:onClick="aktualizacje"
-        android:text="@string/aktualizacje"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonpiec" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMain">
 
-    <Button
-        android:id="@+id/buttonTwurca"
-        style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="84dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/przycisk"
-        android:onClick="twurca"
-        android:text="@string/Twurca"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonpiec"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/przycisk"
-        android:onClick="openpiec"
-        android:text="@string/piec"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonstopy" />
+            <Button
+                android:id="@+id/buttonOres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Ore"
+                android:text="Ores" />
 
-    <Button
-        android:id="@+id/buttonstopy"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/przycisk"
-        android:onClick="openstopy"
-        android:text="@string/stopy_metali"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            <Button
+                android:id="@+id/buttonIngots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingots" />
 
-    <Button
-        android:id="@+id/buttonStartPoradnik"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/przycisk"
-        android:onClick="potadniki"
-        android:text="@string/poradniki_startowe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonaktualizacje" />
+            <Button
+                android:id="@+id/buttonFabricators"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fabricators" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/przycisk"
-        android:onClick="serwer"
-        android:text="@string/dedicated_server"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStartPoradnik" />
+            <Button
+                android:id="@+id/buttonStructureKits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Structure Kits" />
+
+            <Button
+                android:id="@+id/buttonGases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gases" />
+
+            <Button
+                android:id="@+id/buttonreagents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="reagents" />
+
+            <Button
+                android:id="@+id/buttonAtmospherics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atmospherics" />
+
+            <Button
+                android:id="@+id/buttonElectronics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electronics" />
+
+            <Button
+                android:id="@+id/buttonLogicDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logic Devices" />
+
+            <Button
+                android:id="@+id/buttonStructures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Structures" />
+
+            <Button
+                android:id="@+id/buttonOrganics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organics" />
+
+            <Button
+                android:id="@+id/buttonHandTools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hand Tools" />
+
+            <Button
+                android:id="@+id/buttonCartriges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cartriges" />
+
+            <Button
+                android:id="@+id/buttonPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal" />
+
+            <Button
+                android:id="@+id/buttonFurniture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Furniture" />
+
+            <Button
+                android:id="@+id/buttonTravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Travel" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

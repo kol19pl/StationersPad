@@ -27,10 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Poradniki"
-            android:screenOrientation="portrait" />
         <activity android:name=".Dedikatedserwer"/>
+        <activity android:name=".Category.Ore"/>
+        <activity android:name=".Aktualizacje"/>
     </application>
 
 </manifest>
