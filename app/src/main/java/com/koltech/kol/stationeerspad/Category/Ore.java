@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Switch;
 
@@ -54,10 +55,24 @@ public class Ore extends AppCompatActivity implements CompoundButton.OnCheckedCh
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if(switchOre.isChecked()){
-            scrollOre.setEnabled(true);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+            scrollOre.setLayoutParams(layoutParams);
+
         }
         if(!switchOre.isChecked()){
-            scrollOre.setVisibility(View.INVISIBLE);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0);
+            scrollOre.setLayoutParams(layoutParams);
+
+        }
+        if(switchOreTop.isChecked()){
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+            scrollOreTop.setLayoutParams(layoutParams);
+
+        }
+        if(!switchOreTop.isChecked()){
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0);
+            scrollOreTop.setLayoutParams(layoutParams);
+
         }
     }
 
